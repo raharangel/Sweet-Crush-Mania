@@ -1,0 +1,82 @@
+
+body {
+  background-color: #fce4ec;  /* light pink background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+header, footer {
+  background-color: #ff80ab;  /* pink bar */
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+button, .btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover, .btn:hover {
+  background-color: #f50057;
+}
+
+
+.container {
+  margin-top: 20px;
+}
+
+h1, h2, h3 {
+  color: #d81b60;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.tile {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.candy-0 { background-color: #ff1744; } 
+.candy-1 { background-color: #ffea00; } 
+.candy-2 { background-color: #00e5ff; } 
+.candy-3 { background-color: #7c4dff; } 
+.candy-4 { background-color: #00e676; } 
+.candy-5 { background-color: #ff80ab; } 
+
+
+.controls {
+  margin: 15px;
+}
+
+#score {
+  font-weight: bold;
+  margin: 10px;
+}
