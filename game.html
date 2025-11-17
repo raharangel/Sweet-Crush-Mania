@@ -2,36 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Sweet Crush Mania — Play</title>
+  <title>Play — Sweet Crush Mania</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <h1>Sweet Crush Mania</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="game.html">Play Game</a> |
-      <a href="about.html">About</a>
-    </nav>
-  </header>
 
-  <main class="container">
-    <section class="game-panel">
-      <div class="controls">
-        <div id="score">Score: 0</div>
-        <button id="shuffleBtn">Shuffle</button>
-        <button id="resetBtn">Restart</button>
-        <a class="btn" href="index.html">Back</a>
-      </div>
+<header class="site-header">
+  <h1>Sweet Crush Mania</h1>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="game.html">Play Game</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
 
-      <div id="board" class="board" aria-label="Game board"></div>
-      <p class="hint">Click one candy, then click an adjacent candy to swap.</p>
-    </section>
-  </main>
+<main class="container">
 
-  <footer class="site-footer">
-    <small>© Sweet Crush Mania</small>
-  </footer>
-  
+  <section class="page">
+
+    <div class="controls">
+      <div id="score">Score: 0</div>
+      <button>Shuffle</button>
+      <button>Restart</button>
+      <a class="btn small-btn" href="index.html">Back</a>
+    </div>
+
+    <div class="board"></div>
+
+    <p class="hint">Tap a candy, then tap an adjacent one to swap.</p>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <small> Sweet Crush Mania</small>
+</footer>
+
 </body>
 </html>
