@@ -1,17 +1,19 @@
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
-  background:#ffb3d9;
-  color: #4a0033;
+  background: #F2F5F8;         
+  color: #1F2A33;              
 }
+
 
 .site-header {
   padding: 20px;
   text-align: center;
-  background: rgb(255, 102, 179);
+  background: #0A1A33;        
   color: white;
   font-size: 22px;
 }
+
 
 .navbar a {
   margin: 0 12px;
@@ -24,7 +26,7 @@ body {
 }
 
 .navbar a:hover {
-  background: #ff3385;
+  background-color: #2A8CFF;   
 }
 
 .container {
@@ -33,13 +35,13 @@ body {
   padding: 25px;
 }
 
+
 .hero, .page {
   text-align: center;
   padding: 40px 20px;
   background: white;
   border-radius: 18px;
   margin-bottom: 40px;
-
 }
 
 .hero-img, .about-img {
@@ -53,7 +55,7 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 18px;
-  background: #ff3385;
+  background: #FF8A00;         
   color: white;
   text-decoration: none;
   border-radius: 10px;
@@ -62,19 +64,20 @@ body {
 }
 
 .btn:hover {
-  background: #b800e6;
+  background: #2A8CFF;       
 }
+
 
 .small-btn {
   padding: 7px 16px;
 }
+
 
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   margin-top: 40px;
-
 }
 
 .feature-card {
@@ -86,25 +89,24 @@ body {
 
 .feature-card img {
   width: 100%;
-  height: 150px;
+  height: 265px;
   border-radius: 12px;
   object-fit: cover;
   margin-bottom: 10px;
-  height: 265px;
 }
 
 .controls button {
   padding: 9px 16px;
   margin: 5px;
   border: none;
-  background: #ff3385;
+  background: #2A8CFF;      
   color: white;
   border-radius: 8px;
   font-weight: 600;
 }
 
 .controls button:hover {
-  background: #e6005c;
+  background: #FF8A00;        
 }
 
 .board {
@@ -114,22 +116,22 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 5px;
-  background: #ffffffaa;
+  background: #FFFFFFAA;
   padding: 12px;
   border-radius: 14px;
-  /* box-shadow: 0 0 18px rgba(255,0,150,0.25); */
 }
 
 .hint {
   margin-top: 15px;
   font-size: 14px;
-  color: #660033;
+  color: #0A1A33;           
 }
+
 
 .site-footer {
   text-align: center;
   padding: 15px;
-  background: #ff66b3;
+  background: #0A1A33;       
   color: white;
   margin-top: 30px;
 }
@@ -140,12 +142,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(#ffe6f2, #fff0fa);
+  background: linear-gradient(#DCE4F0, #F2F5F8);
 }
 
 .card {
-  background: #ffffff;
+  background: #FFFFFF;
   width: 330px;
   padding: 25px;
   border-radius: 12px;
@@ -153,32 +154,12 @@ body {
 }
 
 h2 {
-  color: #d63384;
+  color: #2A8CFF;
   margin-bottom: 8px;
 }
 
-p {
-  color: #777;
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  text-align: left;
-  color: #555;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  font-size: 14px;
+input, label, p {
+  color: #1F2A33;
 }
 
 .btn {
@@ -187,21 +168,19 @@ input {
   margin-top: 20px;
   border: none;
   border-radius: 8px;
-  background: #ff66b2;
+  background: #FF8A00;
   color: white;
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.small {
-  margin-top: 15px;
-  font-size: 13px;
-  color: #555;
+.btn:hover {
+  background: #2A8CFF;
 }
 
 .small a {
-  color: #d63384;
+  color: #2A8CFF;
   text-decoration: none;
   font-weight: bold;
 }
@@ -212,9 +191,7 @@ input {
 }
 
 .main-logo {
-  width: 55px;       
+  width: 55px;
   height: auto;
 }
-
-
 
