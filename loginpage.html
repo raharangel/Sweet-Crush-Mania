@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Login — Tick-tack-toe</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="style.css">
-  
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -21,38 +20,66 @@
 
   <main class="container">
     <div class="loginpage" role="main">
-
       <div class="card" role="form" aria-labelledby="login-title">
         <h2 id="login-title">Welcome back!</h2>
         <p class="subtitle">Log in to continue to Tick-tack-toe — play with friends or practice solo.</p>
 
-        <form action="#" method="post" autocomplete="on">
+        <form id="loginForm" action="#" method="post" autocomplete="on" novalidate>
           <div class="form-row">
             <label for="username">Username</label>
-            <input id="username" name="username" type="text" placeholder="Pick a username" required>
+            <input id="username" name="username" type="text" placeholder="Pick a username" required />
           </div>
 
           <div class="form-row">
             <label for="password">Password</label>
-            <input id="password" name="password" type="password" placeholder="Password" required>
+            <input id="password" name="password" type="password" placeholder="Password" required />
           </div>
 
           <div class="btn-row">
-            <button type="button" class="btn ghost" onclick="window.location='index.html'">Cancel</button>
+            <button type="button" class="btn ghost" onclick="location.href='index.html'">Cancel</button>
             <button type="submit" class="btn primary">Log In</button>
           </div>
         </form>
 
         <p class="signup">Don't have an account? <a href="#">Create one</a></p>
       </div>
-
     </div>
   </main>
-  <script src="script.js"></script>
+  <script>
+    (function () {
+      const form = document.getElementById('loginForm');
+      if (!form) return;
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
+        const username = document.getElementById('username').value.trim();
+        const password = document.getElementById('password').value;
+        if (!username) {
+          alert('Please enter a username.');
+          document.getElementById('username').focus();
+          return;
+        }
+        if (!password) {
+          alert('Please enter a password.');
+          document.getElementById('password').focus();
+          return;
+        }
+        if (username === 'user' && password === 'pass') {
+          alert('Login successful! Welcome, ' + username + '.');
+          try { localStorage.setItem('ttt_username', username); } catch (e) { /* ignore */ }
+          window.location.href = 'index.html';
+        } else {
+          alert('Invalid username or password. Try user / pass (demo) or register.');
+          document.getElementById('password').value = '';
+          document.getElementById('password').focus();
+        }
+      }, { passive: false });
+    })();
+  </script>
 
   <footer class="site-footer">Sweet Crush Mania — Tick-tack-toe</footer>
 </body>
 </html>
+
 
 

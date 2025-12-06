@@ -46,5 +46,20 @@ if (cells.length > 0) {
   });
 }
 
+const loginForm = document.querySelector("form");
+loginForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      // Simple validation (for demonstration purposes only)
+      if (username === "user" && password === "pass") {
+        alert("Login successful!");
+        window.location.href = "index.html"; // Redirect to home page
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    });
+
 
 
