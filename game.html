@@ -2,45 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Play — Sweet Crush Mania</title>
+  <title>Play — Tick-tack-toe</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <header class="site-header" role="banner">
+    <h1>Tick-tack-toe</h1>
+    <nav class="navbar" role="navigation">
+      <a href="loginpage.html">Login</a>
+      <a href="index.html">Home</a>
+      <a href="game.html" aria-current="page">Play Game</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
 
-<header class="site-header">
-  <h1>Tick-tack-toe</h1>
-  <nav class="navbar">
-    <a href ="loginpage.html">Login</a>
-    <a href="index.html">Home</a>
-    <a href="game.html">Play Game</a>
-    <a href="about.html">About</a>
-     
-  </nav>
-</header>
+  <main class="container">
+    <section class="page" aria-labelledby="play-title">
+      <h2 id="play-title">Play Game</h2>
 
-<main class="container">
+      <div class="controls" role="region" aria-label="game controls">
+        <div id="score" aria-live="polite">Score: 0</div>
+        <button type="button">Shuffle</button>
+        <button type="button">Restart</button>
+        <a class="btn small-btn" href="index.html">Back</a>
+      </div>
+      <div class="board" role="grid" aria-label="game board">
+      </div>
 
-  <section class="page">
+      <p class="hint" aria-hidden="false">Tap a candy, then tap an adjacent one to swap.</p>
+    </section>
+  </main>
 
-    <div class="controls">
-      <div id="score">Score: 0</div>
-      <button>Shuffle</button>
-      <button>Restart</button>
-      <a class="btn small-btn" href="index.html">Back</a>
-    </div>
-
-    <div class="board"></div>
-
-    <p class="hint">Tap a candy, then tap an adjacent one to swap.</p>
-
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <small> Sweet Crush Mania</small>
-</footer>
-
+  <footer class="site-footer">Sweet Crush Mania</footer>
 </body>
 </html>
