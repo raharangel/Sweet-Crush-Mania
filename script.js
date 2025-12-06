@@ -1,11 +1,3 @@
-    // const form = document.querySelector('form');
-    // form.addEventListener('submit', function(event) {
-    //   event.preventDefault();
-    //   const username = document.getElementById('username').value;
-    //   alert(`Welcome back, ${username}!`);
-    //   window.location.href = 'index.html';
-    // });  
-
 console.log("Tick-tac-toe site loaded successfully.");
 
 const navLinks = document.querySelectorAll(".navbar a");
