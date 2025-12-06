@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Play — Tick-tack-toe</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="site-header" role="banner">
+
+  <header class="site-header">
     <h1>Tick-tack-toe</h1>
-    <nav class="navbar" role="navigation">
+    <nav class="navbar">
       <a href="loginpage.html">Login</a>
       <a href="index.html">Home</a>
       <a href="game.html" aria-current="page">Play Game</a>
@@ -19,22 +20,38 @@
   </header>
 
   <main class="container">
-    <section class="page" aria-labelledby="play-title">
-      <h2 id="play-title">Play Game</h2>
+    <section class="page">
+      <h2>Play Game</h2>
 
-      <div class="controls" role="region" aria-label="game controls">
-        <div id="score" aria-live="polite">Score: 0</div>
+      <div class="controls">
+        <div>Score: 0</div>
         <button type="button">Shuffle</button>
         <button type="button">Restart</button>
-        <a class="btn small-btn" href="index.html">Back</a>
-      </div>
-      <div class="board" role="grid" aria-label="game board">
+        <a class="btn" href="index.html">Back</a>
       </div>
 
-      <p class="hint" aria-hidden="false">Tap a candy, then tap an adjacent one to swap.</p>
+      <div class="ttt-board">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <p class="hint">This is a visual Tic-tac-toe board (HTML + CSS only).</p>
     </section>
   </main>
 
-  <footer class="site-footer">Sweet Crush Mania</footer>
+  <footer class="site-footer">
+    Sweet Crush Mania
+  </footer>
+
 </body>
 </html>
+

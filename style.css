@@ -337,4 +337,36 @@ input[type="text"], input[type="password"] {
 .bold {
   font-weight: 700; 
 }
+.ttt-board {
+  width: 330px;
+  height: 330px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.cell {
+  background: #111;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+.cell:hover {
+  background: #222;
+}
+
+.cell:hover::after {
+  content: "X";
+  opacity: 0.2;
+  font-size: 48px;
+  color: #fff;
+}
+
 
