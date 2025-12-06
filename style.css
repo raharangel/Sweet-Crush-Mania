@@ -2,9 +2,8 @@ body {
   margin: 0;
   font-family: Poppins, sans-serif;
   background: #F2F5F8;         
-  color: #1F2A33;              
+  color: #1F2A33;          
 }
-
 
 .site-header {
   padding: 20px;
@@ -28,13 +27,11 @@ body {
 .navbar a:hover {
   background-color: #2A8CFF;   
 }
-
 .container {
-  max-width: 950px;
-  margin: auto;
+  width: min(90%, 1400px);
+  margin: 0 auto;
   padding: 25px;
 }
-
 
 .hero, .page {
   text-align: center;
@@ -194,4 +191,5 @@ input, label, p {
   width: 55px;
   height: auto;
 }
+
 
