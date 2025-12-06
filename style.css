@@ -363,7 +363,7 @@ input[type="text"], input[type="password"] {
 }
 
 .cell:hover::after {
-  content: "X";
+  content: "0orX";
   opacity: 0.2;
   font-size: 48px;
   color: #fff;
